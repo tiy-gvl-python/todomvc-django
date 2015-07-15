@@ -6,14 +6,8 @@ from rest_framework import serializers, generics
 
 class MySerializer(serializers.ModelSerializer):
 
-  #  ser = serializers.SerializerMethodField()
-
-   # def get_ser(self, obj):
-    #    return reverse('put_and_delete', kwargs={'pk': obj.pk})
-
     class Meta:
         model = Todo
-       # fields = ['pk', 'title', 'completed', 'order', 'ser']
 
 
 class GetAndPost(generics.ListCreateAPIView):

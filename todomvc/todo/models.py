@@ -4,6 +4,6 @@ from django.db import models
 
 
 class Todo(models.Model):
-    title = models.CharField(max_length=140)
+    title = models.CharField(max_length=140, blank=False)
     completed = models.BooleanField()
     order = models.IntegerField(null=True)
