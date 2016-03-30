@@ -70,3 +70,5 @@ target/
 
 *.sqlite3
 .direnv/
+
+.idea/
